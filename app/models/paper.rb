@@ -1,5 +1,5 @@
 class Paper < ApplicationRecord
-  belongs_to :users
+  belongs_to :user
   has_many :organisms
 
 end
