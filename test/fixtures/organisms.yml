@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  phylum: MyString
+  order: MyString
+  family: MyString
+  genus: MyString
+  group: one
+  body: MyText
+
+two:
+  name: MyString
+  phylum: MyString
+  order: MyString
+  family: MyString
+  genus: MyString
+  group: two
+  body: MyText
