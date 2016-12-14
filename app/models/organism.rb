@@ -1,4 +1,4 @@
 class Organism < ApplicationRecord
   belongs_to :group
-  has_many :papers
+  belongs_to :paper, optional: true
 end

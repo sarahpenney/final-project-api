@@ -3,7 +3,7 @@ class PapersController < ApplicationController
 
   # GET /papers
   def index
-    @papers = Paper.all
+    @papers = Paper.where(paper_params)
     render json: @papers
   end
 
@@ -45,6 +45,6 @@ class PapersController < ApplicationController
 
     # Only allow a trusted parameter "white list" through.
     def paper_params
-      params.require(:paper).permit(:users, :title, :body)
+      params.permit(:users, :title, :body, :organism_id, :user_id)
     end
 end
